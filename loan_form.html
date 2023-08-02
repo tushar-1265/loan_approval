@@ -5,6 +5,83 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Loan Application Form</title>
   <link rel="stylesheet" href="loan_form.css">
+  <style>
+    /* body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 20px;
+    } */
+
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    form {
+        /* margin-top: 20px; */
+        width: 500px;
+        margin: 0 auto;
+        background-color: #ffffffac;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+        display: block;
+        margin-top: 10px;
+        color: #333;
+        font-weight: bold;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        padding: 8px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .messages {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    .messages li {
+        margin-bottom: 10px;
+        padding: 10px;
+        font-weight: bold;
+        border-radius: 4px;
+    }
+
+    .success {
+        background-color: #d4edda;
+        color: #155724;
+    }
+
+    .error {
+        background-color: #f8d7da;
+        color: #721c24;
+    }
+
+    .result {
+        background-color: #cce5ff;
+        color: #004085;
+    }
+</style>
 </head>
 <body>
     <header>
@@ -24,7 +101,63 @@
           <button class="loginbtn"><a href="login.html">Login</a></button> 
       </header>
 
-  <div class="container">
+      <form method="POST" action="/">
+        <h2>Loan Application Form</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="gender">Gender (Male/Female):</label>
+        <input type="text" id="gender" name="gender" required>
+
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age" required>
+
+        <label for="income">Income:</label>
+        <input type="text" id="income" name="income" required>
+
+        <label for="coapplicant_income">Coapplicant Income:</label>
+        <input type="text" id="coapplicant_income" name="coapplicant_income" required>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="marital_status">Marital Status:</label>
+        <input type="text" id="marital_status" name="marital_status" required>
+
+        <label for="education">Education (Graduate/Not Graduate):</label>
+        <input type="text" id="education" name="education" required>
+
+        <label for="self_employed">Self Employed (Yes/No):</label>
+        <input type="text" id="self_employed" name="self_employed" required>
+
+        <label for="loan_amount">Loan Amount:</label>
+        <input type="text" id="loan_amount" name="loan_amount" required>
+
+        <label for="loan_term">Loan Term:</label>
+        <input type="text" id="loan_term" name="loan_term" required>
+
+        <label for="purpose">Purpose:</label>
+        <input type="text" id="purpose" name="purpose" required>
+
+        <label for="loan_type">Loan Type:</label>
+        <input type="text" id="loan_type" name="loan_type" required>
+
+        <label for="credit_score">Credit Score:</label>
+        <input type="text" id="credit_score" name="credit_score" required>
+
+        <label for="branch_name">Branch Name:</label>
+        <input type="text" id="branch_name" name="branch_name" required>
+
+        <label for="branch_id">Branch ID:</label>
+        <input type="text" id="branch_id" name="branch_id" required>
+
+        <label for="bank_area">Bank Area (Urban/Semiurban/Rural):</label>
+        <input type="text" id="bank_area" name="bank_area" required>
+
+        <input type="submit" value="Submit">
+    </form>
+
+  <!-- <div class="container">
     <h2>Loan Application Form</h2>
     <form id="loanForm">
       <label for="name">Name:</label>
@@ -92,7 +225,7 @@
 
       <button class="submitbutton" type="submit">Submit</button>
     </form>
-  </div>
+  </div> -->
 
   <footer>
     <p>&copy; 2023 Loan Approval Management System. All rights reserved.</p>
