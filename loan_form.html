@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loan Application Form</title>
+  <link rel="stylesheet" href="loan_form.css">
+</head>
+<body>
+    <header>
+        <div class="title">
+            <h2>CreditFlow</h2>
+        </div>
+        <nav>
+            <div class="navbar"><ul>
+                <li><a href="index.html">Home</a></li>
+                <!-- <li><a href="#">About</a></li> -->
+                <li><a href="loan_form.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+            
+          </nav>
+          <button class="loginbtn"><a href="login.html">Login</a></button> 
+      </header>
+
+  <div class="container">
+    <h2>Loan Application Form</h2>
+    <form id="loanForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required>
+
+      <label for="income">Income:</label>
+      <input type="number" id="income" name="income" required>
+
+      <label for="coapplicantIncome">Coapplicant Income:</label>
+      <input type="number" id="coapplicantIncome" name="coapplicantIncome" required>
+
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" required></textarea>
+
+      <label for="maritalStatus">Marital Status:</label>
+      <select id="maritalStatus" name="maritalStatus">
+        <option value="single">Single</option>
+        <option value="married">Married</option>
+        <option value="divorced">Divorced</option>
+      </select>
+
+      <label for="education">Education(Graduate/Not Graduate):</label>
+      <input type="text" id="education" name="education" required>
+
+      <label for="selfEmployed">Self Employed(Yes/No):</label>
+      <input type="text" id="selfEmployed" name="selfEmployed">
+
+      <label for="loanAmount">Loan Amount:</label>
+      <input type="number" id="loanAmount" name="loanAmount" required>
+
+      <label for="loanTerm">Loan Term:</label>
+      <input type="number" id="loanTerm" name="loanTerm" required>
+
+      <label for="purpose">Purpose:</label>
+      <input type="text" id="purpose" name="purpose" required>
+
+      <label for="loanType">Loan Type:</label>
+      <select id="loanType" name="loanType">
+        <option value="personal">Personal Loan</option>
+        <option value="home">Home Loan</option>
+        <option value="business">Business Loan</option>
+      </select>
+
+      <label for="creditScore">Credit Score:</label>
+      <input type="number" id="creditScore" name="creditScore" required>
+
+      <label for="branchName">Branch Name:</label>
+      <input type="text" id="branchName" name="branchName" required>
+
+      <label for="branchId">Branch ID:</label>
+      <input type="text" id="branchId" name="branchId" required>
+
+      <label for="bankArea">Bank Area:</label>
+      <input type="text" id="bankArea" name="bankArea" required>
+
+      <button class="submitbutton" type="submit">Submit</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Loan Approval Management System. All rights reserved.</p>
+  </footer>
+</body>
+</html>
